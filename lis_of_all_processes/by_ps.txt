@@ -1,0 +1,23 @@
+command: ps aux > by_ps.txt
+
+result:
+======================================================================================
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  90304  5628 ?        Ss   11:08   0:00 /sbin/init --log-level=err
+root         331  0.0  0.0  82108  1600 ?        Ss   11:08   0:00 /usr/lib/systemd/systemd-journald
+root         611  0.0  0.0  97556  1628 ?        Ss   11:08   0:00 /usr/lib/systemd/systemd-udevd
+rpc          644  0.0  0.0  67208   812 ?        Ss   11:08   0:00 /usr/bin/rpcbind -w -f
+root         947  0.0  0.0  79132   748 ?        Ss   11:08   0:00 /usr/lib/systemd/systemd-machined
+root         948  0.0  0.0   1416   868 ?        Rs   11:08   0:00 /usr/bin/ttyd -p 8080 --ping-interval 30 -t fontSize=16 -t theme={"foreground": "#eff0eb","ba
+dbus         953  0.0  0.0  54100  2908 ?        Ss   11:08   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --
+root         976  0.0  0.0 106032   708 ?        Ssl  11:08   0:00 /usr/sbin/gssproxy -D
+root        1031  0.0  0.0  76608  1796 ?        Ss   11:08   0:00 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,a
+dnsmasq     1400  0.0  0.0  57624   604 ?        S    11:08   0:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-scr
+root        1401  0.0  0.0  57520   436 ?        S    11:08   0:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-scr
+root        1539  0.0  0.0 115600  2348 pts/0    Ss   11:29   0:00 sudo su - bob
+root        1548  0.0  0.0 109088  1516 pts/0    S    11:29   0:00 su - bob
+bob         1556  0.0  0.0  19360  2120 pts/0    S+   11:29   0:00 -bash
+root        1973  0.0  0.0 115600  2712 pts/1    Ss   11:51   0:00 sudo su - bob
+root        1981  0.0  0.0 109088  1828 pts/1    S    11:51   0:00 su - bob
+bob         1989  0.0  0.0  19348  3328 pts/1    S    11:51   0:00 -bash
+bob         2535  0.0  0.0  51872  3700 pts/1    R+   12:13   0:00 ps aux

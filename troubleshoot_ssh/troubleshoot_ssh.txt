@@ -1,0 +1,4 @@
+1. I cheked HOST IP ADDRESS, if it is correct.
+2. And I checked PORT 22 using -> grep Port /etc/ssh/sshd_config.
+3. Checked firewall which allows such kind of connections using -> firewall-cmd --list-services.
+4. Checked whether service is running or not using -> systemctl status sshd.
